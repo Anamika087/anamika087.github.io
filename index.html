@@ -10,8 +10,8 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: #0f172a;
-    color: #e2e8f0;
+    background: #0b1220;
+    color: #e5e7eb;
 }
 
 .container {
@@ -24,7 +24,7 @@ header {
     text-align: center;
     padding: 80px 20px;
     background: #020617;
-    border-bottom: 1px solid #334155;
+    border-bottom: 1px solid #1f2937;
 }
 
 header h1 {
@@ -32,8 +32,7 @@ header h1 {
 }
 
 header p {
-    color: #94a3b8;
-    font-size: 16px;
+    color: #9ca3af;
 }
 
 /* ===== SECTION ===== */
@@ -42,21 +41,22 @@ section {
 }
 
 h2 {
-    color: #3b82f6;
+    color: #14b8a6;
     margin-bottom: 25px;
 }
 
 /* ===== CARD ===== */
 .card {
-    background: #1e293b;
+    background: #111827;
     padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #334155;
-    transition: 0.2s;
+    border-radius: 12px;
+    border: 1px solid #1f2937;
+    transition: 0.25s;
 }
 
 .card:hover {
-    border-color: #3b82f6;
+    border-color: #14b8a6;
+    transform: translateY(-4px);
 }
 
 /* ===== GRID ===== */
@@ -68,23 +68,29 @@ h2 {
 
 /* ===== SKILL BOX ===== */
 .skill-box {
-    background: #1e293b;
+    background: #111827;
     padding: 18px;
-    border-radius: 10px;
-    border: 1px solid #334155;
-    color: #cbd5f5;
-    transition: 0.2s;
+    border-radius: 12px;
+    border: 1px solid #1f2937;
+    color: #d1d5db;
+    transition: 0.25s;
 }
 
 .skill-box:hover {
-    border-color: #22c55e;
+    border-color: #f59e0b;
+    transform: translateY(-3px);
+}
+
+/* ===== HIGHLIGHT TEXT ===== */
+.highlight {
+    color: #f59e0b;
 }
 
 /* ===== FOOTER ===== */
 footer {
     text-align: center;
     padding: 25px;
-    color: #64748b;
+    color: #6b7280;
 }
 
 </style>
@@ -103,9 +109,9 @@ footer {
 <h2>Summary</h2>
 <div class="card">
 <p>
-I am an M.Tech student specializing in VLSI and Embedded Systems with a strong focus on hardware design, embedded programming, and PCB development. My work centers on building efficient, real-world systems using STM32 microcontrollers, sensor integration, and power electronic converters.
+I am an M.Tech student specializing in <span class="highlight">VLSI and Embedded Systems</span> with a strong focus on hardware design, embedded programming, and PCB development. My work centers on building efficient, real-world systems using STM32 microcontrollers, sensor integration, and power electronic converters.
 <br><br>
-I have hands-on experience in designing and fabricating custom PCBs, developing embedded firmware, and implementing system-level solutions for renewable energy, IoT, and smart monitoring systems. I aim to develop scalable and reliable hardware solutions by integrating intelligent control with robust system design.
+I have hands-on experience in designing and fabricating custom PCBs, developing embedded firmware, and implementing system-level solutions for renewable energy, IoT, and smart monitoring systems. I also utilize <span class="highlight">MATLAB and Simulink</span> for system modeling and performance analysis.
 </p>
 </div>
 </section>
@@ -118,7 +124,7 @@ I have hands-on experience in designing and fabricating custom PCBs, developing 
 <div class="skill-box">Embedded C, Verilog</div>
 <div class="skill-box">PCB Design (Altium)</div>
 <div class="skill-box">UART, SPI, I2C, Ethernet</div>
-<div class="skill-box">RTOS Concepts</div>
+<div class="skill-box">MATLAB & Simulink</div>
 <div class="skill-box">IoT Systems</div>
 </div>
 
@@ -131,7 +137,7 @@ I have hands-on experience in designing and fabricating custom PCBs, developing 
 
 <div class="card">
 <h3>Bidirectional DC-DC Converter</h3>
-<p>Designed and implemented a SEPIC-Zeta converter with STM32 control for renewable energy applications.</p>
+<p>High-efficiency SEPIC-Zeta converter with STM32-based control for renewable energy systems.</p>
 </div>
 
 <div class="card">
@@ -141,17 +147,17 @@ I have hands-on experience in designing and fabricating custom PCBs, developing 
 
 <div class="card">
 <h3>Air Quality Monitoring</h3>
-<p>Multi-sensor system using STM32 for real-time environmental monitoring.</p>
+<p>Multi-sensor system for real-time environmental monitoring using STM32.</p>
 </div>
 
 <div class="card">
 <h3>Railway Crack Detection</h3>
-<p>IoT-based robotic system using ESP8266 with Firebase integration.</p>
+<p>IoT-based robotic system using ESP8266 with real-time monitoring.</p>
 </div>
 
 <div class="card">
 <h3>Heart Pulse Monitoring</h3>
-<p>IoT-based system for real-time heart rate monitoring and alerts.</p>
+<p>IoT-based system for real-time health monitoring and alerts.</p>
 </div>
 
 </div>
@@ -164,7 +170,7 @@ I have hands-on experience in designing and fabricating custom PCBs, developing 
 <div class="card">
 <h3>Embedded Systems Intern – CSEED</h3>
 <p>
-Worked on STM32 sensor interfacing, wireless communication (Wi-Fi/Bluetooth), and RTOS-based task handling.
+Worked on STM32 sensor interfacing, wireless communication, and real-time embedded systems.
 </p>
 </div>
 
