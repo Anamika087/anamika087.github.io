@@ -68,14 +68,28 @@ h2 {
     gap: 25px;
 }
 
-/* ===== SKILL TAG ===== */
-.tag {
-    display: inline-block;
-    background: rgba(56, 189, 248, 0.2);
-    color: #38bdf8;
-    padding: 6px 12px;
-    border-radius: 8px;
-    margin: 5px;
+/* ===== NEW SKILLS GRID ===== */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+/* ===== SKILL BOX ===== */
+.skill-box {
+    background: #172554;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    color: #c7d2fe;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    transition: 0.3s;
+}
+
+.skill-box:hover {
+    transform: translateY(-5px);
+    background: #1e3a8a;
+    border-color: #38bdf8;
 }
 
 /* ===== FOOTER ===== */
@@ -110,40 +124,18 @@ I have hands-on experience in designing and fabricating custom PCBs, developing 
 
 <section>
 <h2>Skills</h2>
-<div class="grid">
 
-<div class="card">
-<h3>Programming</h3>
-<span class="tag">Embedded C</span>
-<span class="tag">C Programming</span>
-<span class="tag">Verilog</span>
-</div>
+<div class="skills-grid">
 
-<div class="card">
-<h3>Embedded Systems</h3>
-<span class="tag">STM32</span>
-<span class="tag">ADC</span>
-<span class="tag">UART</span>
-<span class="tag">SPI</span>
-<span class="tag">I2C</span>
-</div>
-
-<div class="card">
-<h3>Hardware & PCB</h3>
-<span class="tag">PCB Design</span>
-<span class="tag">Altium Designer</span>
-<span class="tag">Power Electronics</span>
-</div>
-
-<div class="card">
-<h3>Tools</h3>
-<span class="tag">Proteus</span>
-<span class="tag">LTspice</span>
-<span class="tag">STM32CubeIDE</span>
-<span class="tag">Arduino IDE</span>
-</div>
+<div class="skill-box">STM32, Arduino, ESP</div>
+<div class="skill-box">Embedded C, Verilog</div>
+<div class="skill-box">PCB Design (Altium)</div>
+<div class="skill-box">UART, SPI, I2C, Ethernet</div>
+<div class="skill-box">RTOS Concepts</div>
+<div class="skill-box">IoT Systems</div>
 
 </div>
+
 </section>
 
 <section>
