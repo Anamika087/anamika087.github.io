@@ -2,65 +2,90 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Anamika | Portfolio</title>
+<title>Anamika P V | Portfolio</title>
 
 <style>
+
+/* ===== GLOBAL ===== */
 body {
-    font-family: 'Segoe UI', sans-serif;
     margin: 0;
-    background: #0f172a;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #020617, #0f172a);
     color: #e2e8f0;
 }
 
-/* HEADER */
+section {
+    padding: 60px 10%;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+/* ===== HEADER ===== */
 header {
     text-align: center;
-    padding: 60px;
-    background: linear-gradient(135deg, #06b6d4, #3b82f6);
-    color: white;
+    padding: 100px 20px;
+    background: radial-gradient(circle at top, #1e293b, #020617);
 }
 
-h1 { margin: 0; font-size: 40px; }
-
-/* SECTION */
-section {
-    padding: 40px 80px;
+header h1 {
+    font-size: 45px;
+    font-weight: bold;
 }
 
+header p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #94a3b8;
+}
+
+/* ===== TITLES ===== */
 h2 {
-    color: #22d3ee;
-    margin-bottom: 20px;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #38bdf8;
 }
 
-/* CARD DESIGN */
+/* ===== CARD (GLASS EFFECT) ===== */
 .card {
-    background: #1e293b;
-    padding: 20px;
-    border-radius: 12px;
+    background: rgba(30, 41, 59, 0.6);
+    backdrop-filter: blur(12px);
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid rgba(148, 163, 184, 0.2);
     margin-bottom: 20px;
     transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
+    border-color: #38bdf8;
 }
 
-/* GRID */
+/* ===== GRID ===== */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
+    gap: 25px;
 }
 
-/* TAG STYLE */
+/* ===== TAGS ===== */
 .tag {
-    background: #22d3ee;
-    color: black;
-    padding: 5px 10px;
-    border-radius: 5px;
     display: inline-block;
+    background: rgba(56, 189, 248, 0.2);
+    color: #38bdf8;
+    padding: 6px 12px;
+    border-radius: 8px;
     margin: 5px;
     font-size: 14px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #64748b;
 }
 
 </style>
@@ -70,14 +95,75 @@ h2 {
 
 <header>
     <h1>Anamika P V</h1>
-    <p>MTech VLSI & Embedded Systems Engineer</p>
+    <p>VLSI & Embedded Systems | PCB Design | Power Electronics</p>
 </header>
 
 <section>
 <h2>Summary</h2>
 <div class="card">
 <p>
-To pursue a challenging role in VLSI and Embedded Systems where I can apply my expertise in hardware design, embedded programming, and PCB development to deliver innovative real-world solutions.
+I am an M.Tech student specializing in VLSI and Embedded Systems with a strong focus on hardware design, embedded programming, and PCB development. My work centers on building efficient, real-world systems using STM32 microcontrollers, sensor integration, and power electronic converters.
+<br><br>
+I have hands-on experience in designing and fabricating custom PCBs, developing embedded firmware, and implementing system-level solutions for applications such as renewable energy systems, smart monitoring, and IoT-based devices. I am particularly interested in bridging the gap between hardware and intelligent control systems to develop reliable and scalable engineering solutions.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Skills</h2>
+<div class="card">
+<span class="tag">STM32</span>
+<span class="tag">Embedded C</span>
+<span class="tag">C Programming</span>
+<span class="tag">Verilog (Basics)</span>
+<span class="tag">PCB Design</span>
+<span class="tag">Altium Designer</span>
+<span class="tag">Proteus</span>
+<span class="tag">LTspice</span>
+<span class="tag">SPI</span>
+<span class="tag">UART</span>
+<span class="tag">I2C</span>
+</div>
+</section>
+
+<section>
+<h2>Projects</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Bidirectional DC-DC Converter</h3>
+<p>Designed a high-efficiency SEPIC-Zeta converter with STM32-based control and custom PCB for renewable energy integration.</p>
+</div>
+
+<div class="card">
+<h3>STM32 Digital Voltmeter</h3>
+<p>Developed a precise voltage measurement system using ADC and OLED display with a compact custom PCB.</p>
+</div>
+
+<div class="card">
+<h3>Air Quality Monitoring System</h3>
+<p>Integrated gas, dust, temperature, and humidity sensors with STM32 for real-time environmental monitoring.</p>
+</div>
+
+<div class="card">
+<h3>IoT Railway Crack Detection</h3>
+<p>Developed a smart robotic system using ESP8266 with Firebase-based real-time monitoring.</p>
+</div>
+
+<div class="card">
+<h3>Heart Pulse Monitoring System</h3>
+<p>Built an IoT-based health monitoring system with real-time alerts using ESP8266 and mobile integration.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>Experience</h2>
+<div class="card">
+<h3>Embedded Systems Intern – CSEED</h3>
+<p>
+Worked on STM32 sensor interfacing, Bluetooth and Wi-Fi communication, and gained exposure to RTOS concepts and real-time task scheduling.
 </p>
 </div>
 </section>
@@ -86,102 +172,42 @@ To pursue a challenging role in VLSI and Embedded Systems where I can apply my e
 <h2>Education</h2>
 
 <div class="card">
-<strong>M.Tech in VLSI & Embedded Systems</strong><br>
-Mar Athanasius College of Engineering (2024 – 2026)<br>
-CGPA: 7.83
+<h3>M.Tech in VLSI & Embedded Systems</h3>
+<p>Mar Athanasius College of Engineering (2024 – 2026)</p>
+<p>CGPA: 7.83</p>
 </div>
 
 <div class="card">
-<strong>B.Tech in Electronics & Communication Engineering</strong><br>
-Vimal Jyothi Engineering College (2020 – 2024)<br>
-CGPA: 7.23
+<h3>B.Tech in Electronics & Communication Engineering</h3>
+<p>Vimal Jyothi Engineering College (2020 – 2024)</p>
+<p>CGPA: 7.23</p>
 </div>
 
 <div class="card">
-<strong>Higher Secondary (Plus Two)</strong><br>
-Moothedath Higher Secondary School (2020)<br>
-Percentage: 87.08%
+<h3>Higher Secondary (Plus Two)</h3>
+<p>Moothedath Higher Secondary School (2020)</p>
+<p>Percentage: 87.08%</p>
 </div>
 
 <div class="card">
-<strong>Secondary School (10th)</strong><br>
-Moothedath Higher Secondary School (2018)<br>
-Percentage: 90%
-</div>
-
-</section>
-
-<section>
-<h2>Skills</h2>
-
-<div class="card">
-<div class="tag">Embedded C</div>
-<div class="tag">C Programming</div>
-<div class="tag">Verilog (Basics)</div>
-<div class="tag">STM32</div>
-<div class="tag">Altium Designer</div>
-<div class="tag">Proteus</div>
-<div class="tag">LTspice</div>
-<div class="tag">SPI</div>
-<div class="tag">UART</div>
-<div class="tag">I2C</div>
-</div>
-
-</section>
-
-<section>
-<h2>Projects</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Bidirectional DC-DC Converter</h3>
-<p>High-efficiency SEPIC-Zeta converter with STM32-based control and custom PCB design for renewable energy applications.</p>
-</div>
-
-<div class="card">
-<h3>Digital Voltmeter</h3>
-<p>STM32-based voltmeter using ADC and OLED display with custom PCB design.</p>
-</div>
-
-<div class="card">
-<h3>Air Quality Monitoring System</h3>
-<p>STM32 system integrating gas, dust, temperature sensors with real-time display.</p>
-</div>
-
-<div class="card">
-<h3>Railway Crack Detection (IoT)</h3>
-<p>ESP8266-based robotic system with Firebase and Android monitoring.</p>
-</div>
-
-<div class="card">
-<h3>Heart Pulse Monitoring System</h3>
-<p>IoT-based health monitoring with real-time alerts using ESP8266.</p>
-</div>
-
-</div>
-
-</section>
-
-<section>
-<h2>Experience</h2>
-
-<div class="card">
-<strong>Embedded Systems Internship – CSEED</strong><br>
-Worked on STM32 sensor interfacing, Bluetooth/Wi-Fi communication, and RTOS concepts.
+<h3>Secondary School (SSLC)</h3>
+<p>Moothedath Higher Secondary School (2018)</p>
+<p>Percentage: 90%</p>
 </div>
 
 </section>
 
 <section>
 <h2>Contact</h2>
-
 <div class="card">
 <p>Email: anamikapv087@gmail.com</p>
 <p>Phone: +91 7012227047</p>
 </div>
-
 </section>
+
+<footer>
+<p>© 2026 Anamika P V | Portfolio</p>
+</footer>
 
 </body>
 </html>
