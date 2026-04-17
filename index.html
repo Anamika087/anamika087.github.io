@@ -10,7 +10,7 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #020617, #0f172a);
+    background: #0f172a;
     color: #e2e8f0;
 }
 
@@ -22,80 +22,68 @@ body {
 /* ===== HEADER ===== */
 header {
     text-align: center;
-    padding: 100px 20px;
-    background: radial-gradient(circle at top, #1e293b, #020617);
+    padding: 80px 20px;
+    background: #020617;
+    border-bottom: 1px solid #334155;
 }
 
 header h1 {
-    font-size: 48px;
+    font-size: 42px;
 }
 
 header p {
     color: #94a3b8;
-    font-size: 18px;
-    margin-top: 10px;
+    font-size: 16px;
 }
 
 /* ===== SECTION ===== */
 section {
-    padding: 70px 0;
+    padding: 60px 0;
 }
 
 h2 {
-    color: #38bdf8;
-    margin-bottom: 30px;
+    color: #3b82f6;
+    margin-bottom: 25px;
 }
 
 /* ===== CARD ===== */
 .card {
-    background: rgba(30, 41, 59, 0.6);
-    backdrop-filter: blur(12px);
-    padding: 25px;
-    border-radius: 15px;
-    border: 1px solid rgba(148, 163, 184, 0.2);
-    transition: 0.3s;
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    transition: 0.2s;
 }
 
 .card:hover {
-    transform: translateY(-6px);
-    border-color: #38bdf8;
+    border-color: #3b82f6;
 }
 
 /* ===== GRID ===== */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-}
-
-/* ===== NEW SKILLS GRID ===== */
-.skills-grid {
+.grid, .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 25px;
+    gap: 20px;
 }
 
 /* ===== SKILL BOX ===== */
 .skill-box {
-    background: #172554;
-    padding: 20px;
-    border-radius: 12px;
-    font-size: 16px;
-    color: #c7d2fe;
-    border: 1px solid rgba(59, 130, 246, 0.2);
-    transition: 0.3s;
+    background: #1e293b;
+    padding: 18px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    color: #cbd5f5;
+    transition: 0.2s;
 }
 
 .skill-box:hover {
-    transform: translateY(-5px);
-    background: #1e3a8a;
-    border-color: #38bdf8;
+    border-color: #22c55e;
 }
 
 /* ===== FOOTER ===== */
 footer {
     text-align: center;
-    padding: 30px;
+    padding: 25px;
     color: #64748b;
 }
 
@@ -126,20 +114,19 @@ I have hands-on experience in designing and fabricating custom PCBs, developing 
 <h2>Skills</h2>
 
 <div class="skills-grid">
-
 <div class="skill-box">STM32, Arduino, ESP</div>
 <div class="skill-box">Embedded C, Verilog</div>
 <div class="skill-box">PCB Design (Altium)</div>
 <div class="skill-box">UART, SPI, I2C, Ethernet</div>
 <div class="skill-box">RTOS Concepts</div>
 <div class="skill-box">IoT Systems</div>
-
 </div>
 
 </section>
 
 <section>
 <h2>Projects</h2>
+
 <div class="grid">
 
 <div class="card">
@@ -168,16 +155,19 @@ I have hands-on experience in designing and fabricating custom PCBs, developing 
 </div>
 
 </div>
+
 </section>
 
 <section>
 <h2>Experience</h2>
+
 <div class="card">
 <h3>Embedded Systems Intern – CSEED</h3>
 <p>
 Worked on STM32 sensor interfacing, wireless communication (Wi-Fi/Bluetooth), and RTOS-based task handling.
 </p>
 </div>
+
 </section>
 
 <section>
@@ -215,10 +205,12 @@ Worked on STM32 sensor interfacing, wireless communication (Wi-Fi/Bluetooth), an
 
 <section>
 <h2>Contact</h2>
+
 <div class="card">
 <p>Email: anamikapv087@gmail.com</p>
 <p>Phone: +91 7012227047</p>
 </div>
+
 </section>
 
 </div>
