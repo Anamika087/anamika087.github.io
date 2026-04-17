@@ -14,12 +14,9 @@ body {
     color: #e2e8f0;
 }
 
-section {
-    padding: 60px 10%;
-}
-
-h1, h2, h3 {
-    margin: 0;
+.container {
+    width: 85%;
+    margin: auto;
 }
 
 /* ===== HEADER ===== */
@@ -30,31 +27,32 @@ header {
 }
 
 header h1 {
-    font-size: 45px;
-    font-weight: bold;
+    font-size: 48px;
 }
 
 header p {
-    margin-top: 10px;
-    font-size: 18px;
     color: #94a3b8;
+    font-size: 18px;
+    margin-top: 10px;
 }
 
-/* ===== TITLES ===== */
+/* ===== SECTION ===== */
+section {
+    padding: 70px 0;
+}
+
 h2 {
-    font-size: 28px;
-    margin-bottom: 30px;
     color: #38bdf8;
+    margin-bottom: 30px;
 }
 
-/* ===== CARD (GLASS EFFECT) ===== */
+/* ===== CARD ===== */
 .card {
     background: rgba(30, 41, 59, 0.6);
     backdrop-filter: blur(12px);
     padding: 25px;
     border-radius: 15px;
     border: 1px solid rgba(148, 163, 184, 0.2);
-    margin-bottom: 20px;
     transition: 0.3s;
 }
 
@@ -70,7 +68,7 @@ h2 {
     gap: 25px;
 }
 
-/* ===== TAGS ===== */
+/* ===== SKILL TAG ===== */
 .tag {
     display: inline-block;
     background: rgba(56, 189, 248, 0.2);
@@ -78,7 +76,6 @@ h2 {
     padding: 6px 12px;
     border-radius: 8px;
     margin: 5px;
-    font-size: 14px;
 }
 
 /* ===== FOOTER ===== */
@@ -98,31 +95,54 @@ footer {
     <p>VLSI & Embedded Systems | PCB Design | Power Electronics</p>
 </header>
 
+<div class="container">
+
 <section>
 <h2>Summary</h2>
 <div class="card">
 <p>
 I am an M.Tech student specializing in VLSI and Embedded Systems with a strong focus on hardware design, embedded programming, and PCB development. My work centers on building efficient, real-world systems using STM32 microcontrollers, sensor integration, and power electronic converters.
 <br><br>
-I have hands-on experience in designing and fabricating custom PCBs, developing embedded firmware, and implementing system-level solutions for applications such as renewable energy systems, smart monitoring, and IoT-based devices. I am particularly interested in bridging the gap between hardware and intelligent control systems to develop reliable and scalable engineering solutions.
+I have hands-on experience in designing and fabricating custom PCBs, developing embedded firmware, and implementing system-level solutions for renewable energy, IoT, and smart monitoring systems. I aim to develop scalable and reliable hardware solutions by integrating intelligent control with robust system design.
 </p>
 </div>
 </section>
 
 <section>
 <h2>Skills</h2>
+<div class="grid">
+
 <div class="card">
-<span class="tag">STM32</span>
+<h3>Programming</h3>
 <span class="tag">Embedded C</span>
 <span class="tag">C Programming</span>
-<span class="tag">Verilog (Basics)</span>
+<span class="tag">Verilog</span>
+</div>
+
+<div class="card">
+<h3>Embedded Systems</h3>
+<span class="tag">STM32</span>
+<span class="tag">ADC</span>
+<span class="tag">UART</span>
+<span class="tag">SPI</span>
+<span class="tag">I2C</span>
+</div>
+
+<div class="card">
+<h3>Hardware & PCB</h3>
 <span class="tag">PCB Design</span>
 <span class="tag">Altium Designer</span>
+<span class="tag">Power Electronics</span>
+</div>
+
+<div class="card">
+<h3>Tools</h3>
 <span class="tag">Proteus</span>
 <span class="tag">LTspice</span>
-<span class="tag">SPI</span>
-<span class="tag">UART</span>
-<span class="tag">I2C</span>
+<span class="tag">STM32CubeIDE</span>
+<span class="tag">Arduino IDE</span>
+</div>
+
 </div>
 </section>
 
@@ -132,27 +152,27 @@ I have hands-on experience in designing and fabricating custom PCBs, developing 
 
 <div class="card">
 <h3>Bidirectional DC-DC Converter</h3>
-<p>Designed a high-efficiency SEPIC-Zeta converter with STM32-based control and custom PCB for renewable energy integration.</p>
+<p>Designed and implemented a SEPIC-Zeta converter with STM32 control for renewable energy applications.</p>
 </div>
 
 <div class="card">
-<h3>STM32 Digital Voltmeter</h3>
-<p>Developed a precise voltage measurement system using ADC and OLED display with a compact custom PCB.</p>
+<h3>Digital Voltmeter</h3>
+<p>STM32-based voltage measurement system with ADC and OLED display using custom PCB.</p>
 </div>
 
 <div class="card">
-<h3>Air Quality Monitoring System</h3>
-<p>Integrated gas, dust, temperature, and humidity sensors with STM32 for real-time environmental monitoring.</p>
+<h3>Air Quality Monitoring</h3>
+<p>Multi-sensor system using STM32 for real-time environmental monitoring.</p>
 </div>
 
 <div class="card">
-<h3>IoT Railway Crack Detection</h3>
-<p>Developed a smart robotic system using ESP8266 with Firebase-based real-time monitoring.</p>
+<h3>Railway Crack Detection</h3>
+<p>IoT-based robotic system using ESP8266 with Firebase integration.</p>
 </div>
 
 <div class="card">
-<h3>Heart Pulse Monitoring System</h3>
-<p>Built an IoT-based health monitoring system with real-time alerts using ESP8266 and mobile integration.</p>
+<h3>Heart Pulse Monitoring</h3>
+<p>IoT-based system for real-time heart rate monitoring and alerts.</p>
 </div>
 
 </div>
@@ -163,7 +183,7 @@ I have hands-on experience in designing and fabricating custom PCBs, developing 
 <div class="card">
 <h3>Embedded Systems Intern – CSEED</h3>
 <p>
-Worked on STM32 sensor interfacing, Bluetooth and Wi-Fi communication, and gained exposure to RTOS concepts and real-time task scheduling.
+Worked on STM32 sensor interfacing, wireless communication (Wi-Fi/Bluetooth), and RTOS-based task handling.
 </p>
 </div>
 </section>
@@ -171,28 +191,32 @@ Worked on STM32 sensor interfacing, Bluetooth and Wi-Fi communication, and gaine
 <section>
 <h2>Education</h2>
 
+<div class="grid">
+
 <div class="card">
-<h3>M.Tech in VLSI & Embedded Systems</h3>
-<p>Mar Athanasius College of Engineering (2024 – 2026)</p>
-<p>CGPA: 7.83</p>
+<h3>M.Tech – VLSI & Embedded Systems</h3>
+<p>Mar Athanasius College of Engineering</p>
+<p>2024 – 2026 | CGPA: 7.83</p>
 </div>
 
 <div class="card">
-<h3>B.Tech in Electronics & Communication Engineering</h3>
-<p>Vimal Jyothi Engineering College (2020 – 2024)</p>
-<p>CGPA: 7.23</p>
+<h3>B.Tech – ECE</h3>
+<p>Vimal Jyothi Engineering College</p>
+<p>2020 – 2024 | CGPA: 7.23</p>
 </div>
 
 <div class="card">
-<h3>Higher Secondary (Plus Two)</h3>
-<p>Moothedath Higher Secondary School (2020)</p>
-<p>Percentage: 87.08%</p>
+<h3>Higher Secondary</h3>
+<p>Moothedath HSS</p>
+<p>2020 | 87.08%</p>
 </div>
 
 <div class="card">
-<h3>Secondary School (SSLC)</h3>
-<p>Moothedath Higher Secondary School (2018)</p>
-<p>Percentage: 90%</p>
+<h3>SSLC</h3>
+<p>Moothedath HSS</p>
+<p>2018 | 90%</p>
+</div>
+
 </div>
 
 </section>
@@ -205,8 +229,10 @@ Worked on STM32 sensor interfacing, Bluetooth and Wi-Fi communication, and gaine
 </div>
 </section>
 
+</div>
+
 <footer>
-<p>© 2026 Anamika P V | Portfolio</p>
+<p>© 2026 Anamika P V</p>
 </footer>
 
 </body>
