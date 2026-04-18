@@ -27,14 +27,6 @@ header {
     border-bottom: 1px solid #1f2937;
 }
 
-header h1 {
-    font-size: 42px;
-}
-
-header p {
-    color: #9ca3af;
-}
-
 /* ===== SECTION ===== */
 section {
     padding: 60px 0;
@@ -42,7 +34,6 @@ section {
 
 h2 {
     color: #14b8a6;
-    margin-bottom: 25px;
 }
 
 /* ===== CARD ===== */
@@ -51,12 +42,12 @@ h2 {
     padding: 20px;
     border-radius: 12px;
     border: 1px solid #1f2937;
-    transition: 0.25s;
+    transition: 0.3s;
 }
 
 .card:hover {
+    transform: translateY(-5px);
     border-color: #14b8a6;
-    transform: translateY(-4px);
 }
 
 /* ===== GRID ===== */
@@ -66,26 +57,30 @@ h2 {
     gap: 20px;
 }
 
+/* ===== IMAGE ===== */
+.project-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.project-img:hover {
+    transform: scale(1.03);
+}
+
 /* ===== SKILL BOX ===== */
 .skill-box {
     background: #111827;
     padding: 18px;
     border-radius: 12px;
     border: 1px solid #1f2937;
-    color: #d1d5db;
-    transition: 0.25s;
-}
-
-.skill-box:hover {
-    border-color: #14b8a6;
-    transform: translateY(-3px);
 }
 
 /* ===== FOOTER ===== */
 footer {
     text-align: center;
-    padding: 25px;
-    color: #6b7280;
+    padding: 20px;
 }
 
 </style>
@@ -104,120 +99,59 @@ footer {
 <h2>Summary</h2>
 <div class="card">
 <p>
-I am an M.Tech student specializing in VLSI and Embedded Systems with a strong focus on hardware design, embedded programming, and PCB development. My work centers on building efficient, real-world systems using STM32 microcontrollers, sensor integration, and power electronic converters.
-<br><br>
-I have hands-on experience in designing and fabricating custom PCBs, developing embedded firmware, and implementing system-level solutions for renewable energy, IoT, and smart monitoring systems. I also utilize MATLAB and Simulink for system modeling and performance analysis.
+M.Tech student specializing in VLSI and Embedded Systems with strong focus on PCB design, STM32 systems, and power electronics. Experienced in real-world hardware development and MATLAB/Simulink modeling.
 </p>
 </div>
 </section>
 
 <section>
 <h2>Skills</h2>
-
 <div class="skills-grid">
 <div class="skill-box">STM32, Arduino, ESP</div>
 <div class="skill-box">Embedded C, Verilog</div>
 <div class="skill-box">PCB Design (Altium)</div>
-<div class="skill-box">UART, SPI, I2C, Ethernet</div>
+<div class="skill-box">UART, SPI, I2C</div>
 <div class="skill-box">MATLAB & Simulink</div>
 <div class="skill-box">IoT Systems</div>
 </div>
-
 </section>
 
 <section>
 <h2>Projects</h2>
-
 <div class="grid">
 
 <div class="card">
-<h3>Bidirectional DC-DC Converter</h3>
-<p>High-efficiency SEPIC-Zeta converter with STM32-based control for renewable energy systems.</p>
+<img src="images/converter.png" class="project-img">
+<h3>DC-DC Converter</h3>
+<p>High-efficiency SEPIC-Zeta converter with STM32 control.</p>
 </div>
 
 <div class="card">
+<img src="images/voltmeter.png" class="project-img">
 <h3>Digital Voltmeter</h3>
-<p>STM32-based voltage measurement system with ADC and OLED display using custom PCB.</p>
+<p>STM32-based measurement system with OLED display.</p>
 </div>
 
 <div class="card">
-<h3>Air Quality Monitoring</h3>
-<p>Multi-sensor system for real-time environmental monitoring using STM32.</p>
-</div>
-
-<div class="card">
-<h3>Railway Crack Detection</h3>
-<p>IoT-based robotic system using ESP8266 with real-time monitoring.</p>
-</div>
-
-<div class="card">
-<h3>Heart Pulse Monitoring</h3>
-<p>IoT-based system for real-time health monitoring and alerts.</p>
+<img src="images/air_quality.png" class="project-img">
+<h3>Air Quality Monitor</h3>
+<p>Multi-sensor monitoring using STM32.</p>
 </div>
 
 </div>
-
-</section>
-
-<section>
-<h2>Experience</h2>
-
-<div class="card">
-<h3>Embedded Systems Intern – CSEED</h3>
-<p>
-Worked on STM32 sensor interfacing, wireless communication, and real-time embedded systems.
-</p>
-</div>
-
-</section>
-
-<section>
-<h2>Education</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>M.Tech – VLSI & Embedded Systems</h3>
-<p>Mar Athanasius College of Engineering</p>
-<p>2024 – 2026 | CGPA: 7.83</p>
-</div>
-
-<div class="card">
-<h3>B.Tech – ECE</h3>
-<p>Vimal Jyothi Engineering College</p>
-<p>2020 – 2024 | CGPA: 7.23</p>
-</div>
-
-<div class="card">
-<h3>Higher Secondary</h3>
-<p>Moothedath HSS</p>
-<p>2020 | 87.08%</p>
-</div>
-
-<div class="card">
-<h3>SSLC</h3>
-<p>Moothedath HSS</p>
-<p>2018 | 90%</p>
-</div>
-
-</div>
-
 </section>
 
 <section>
 <h2>Contact</h2>
-
 <div class="card">
 <p>Email: anamikapv087@gmail.com</p>
-<p>Phone: +91 7012227047</p>
 </div>
-
 </section>
 
 </div>
 
 <footer>
-<p>© 2026 Anamika P V</p>
+<p>© 2026 Anamika</p>
 </footer>
 
 </body>
