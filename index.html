@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anamika P V | Portfolio</title>
+<title>Anulakshmi C | Portfolio</title>
 
 <style>
 body {
@@ -13,7 +13,6 @@ body {
     color: #ccd6f6;
 }
 
-/* HEADER */
 header {
     text-align: center;
     padding: 60px 20px;
@@ -31,19 +30,16 @@ h2 {
     padding-bottom: 5px;
 }
 
-/* SECTION */
 .section {
     padding: 50px 10%;
 }
 
-/* GRID */
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
-/* CARD */
 .card {
     background: #112240;
     padding: 20px;
@@ -56,14 +52,6 @@ h2 {
     background: #233554;
 }
 
-/* IMAGE */
-.card img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-/* LIST */
 ul {
     list-style: none;
     padding: 0;
@@ -73,7 +61,6 @@ li {
     margin: 8px 0;
 }
 
-/* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
@@ -85,19 +72,19 @@ footer {
 <body>
 
 <header>
-    <h1>Anamika P V</h1>
-    <p>VLSI & Embedded Systems Engineer</p>
-    <p>STM32 | PCB Design | Power Electronics</p>
+    <h1>Anulakshmi C</h1>
+    <p>Embedded Systems & PCB Design Engineer</p>
+    <p>STM32 | IoT | Real-Time Systems</p>
 </header>
 
 <section class="section">
     <h2>About</h2>
     <p>
-    I am an M.Tech student specializing in VLSI and Embedded Systems with strong expertise in STM32-based system design, PCB development, and power electronics applications.  
+       I am an M.Tech student specializing in VLSI and Embedded Systems with hands-on experience in STM32-based system design, PCB development, and real-time embedded applications.
 
-    I have hands-on experience in designing and fabricating custom PCBs, developing embedded firmware, and building real-world systems including digital measurement devices and converter circuits.  
+I have worked on projects involving sensor interfacing, motor control, and IoT systems, including an STM32-based control system developed during my internship at DRDO–NPOL.
 
-    I also use MATLAB and Simulink for system modeling and performance analysis. I am passionate about developing reliable embedded solutions for real-world engineering problems.
+I am passionate about building reliable hardware solutions and integrating embedded systems for real-world applications.
     </p>
 </section>
 
@@ -107,8 +94,8 @@ footer {
         <div class="card">STM32, Arduino, ESP</div>
         <div class="card">Embedded C, Verilog</div>
         <div class="card">PCB Design (Altium)</div>
-        <div class="card">UART, SPI, I2C</div>
-        <div class="card">MATLAB & Simulink</div>
+        <div class="card">UART, SPI, I2C, Ethernet</div>
+        <div class="card">RTOS Concepts</div>
         <div class="card">IoT Systems</div>
     </div>
 </section>
@@ -117,59 +104,58 @@ footer {
     <h2>Projects</h2>
     <div class="card-container">
 
-        <!-- Converter Project -->
+          <div class="card">
+            <h3>Winch Control System</h3>
+           <p>
+Developing an STM32-based control system for submarine sonar winch at DRDO–NPOL using RTOS.  
+Implemented VFD motor control, Auto/Manual modes, and safety interlocks.  
+Integrated Ethernet communication using TCP/UDP protocols.
+</p>
+        </div>
         <div class="card">
-            <h3>Bidirectional DC-DC Converter</h3>
-
-            <img src="converter.png">
-            <img src="converter_1.png">
-            <img src="converter_2.png">
-            <img src="converter_4.png">
-
+            <h3>Digital Ammeter</h3>
+             <img src="Ammeter_schematicsheet_1.png" style="width:100%; border-radius:8px;">
+             <img src="Ammeter_schematicsheet_2.png" style="width:100%; border-radius:8px;">
+             <img src="Digital_ammeter_PCB.jpeg" style="width:100%; border-radius:8px;">
+             <img src="digital ammeter_pcb2.png" style="width:100%; border-radius:8px;">
             <p>
-            Designed a high-efficiency SEPIC-Zeta converter using STM32 for renewable energy applications.  
-            Implemented control algorithms and developed a custom PCB for power conversion.
-            </p>
+Designed a PCB-based digital ammeter using MAX4172 and MCP3425 for precise current measurement.  
+Implemented STM32 for real-time data processing and display control.  
+Displayed output on a multiplexed 7-segment LED with stable readings.
+</p>
         </div>
 
-        <!-- Digital Voltmeter -->
         <div class="card">
-            <h3>Digital Voltmeter</h3>
-
-            <img src="bidirectiona.png">
-
-            <p>
-            Developed an STM32-based voltmeter using ADC and OLED display.  
-            Designed a compact PCB for accurate voltage measurement.
-            </p>
+            <h3>Grid Monitoring System</h3>
+             <img src="Grid_parameter_monitoring_system_sheet_1.png" style="width:100%; border-radius:8px;">
+             <img src="Grid_parameter_monitoring_system_sheet_2.png" style="width:100%; border-radius:8px;">
+             <img src="Grid_monitoring_system_PCB.png" style="width:100%; border-radius:8px;">
+             <img src="Grid_parameter_monitoring_system_PCB2.png" style="width:100%; border-radius:8px;">
+           <p>
+Developed a real-time system to measure voltage, current, and frequency using STM32.  
+Used signal conditioning circuits for accurate sensing of electrical parameters.  
+Displayed live data on an LCD for continuous grid monitoring.
+</p>
         </div>
 
-        <!-- Air Quality -->
         <div class="card">
-            <h3>Air Quality Monitoring System</h3>
-            <p>
-            Built a multi-sensor system to measure environmental parameters using STM32.  
-            Displayed real-time data on an OLED screen.
-            </p>
+            <h3>IoT Pet Feeder</h3>
+           <p>
+Built an IoT-based automated pet feeding system using ESP module.  
+Enabled remote scheduling and control through a mobile application.  
+Implemented real-time monitoring and automation features.
+</p>
         </div>
 
-        <!-- IoT -->
-        <div class="card">
-            <h3>IoT Railway Crack Detection</h3>
-            <p>
-            Developed an IoT-based robotic system using ESP8266.  
-            Enabled real-time monitoring and data logging using cloud platforms.
-            </p>
-        </div>
-
-        <!-- Heart -->
-        <div class="card">
-            <h3>Heart Pulse Monitoring System</h3>
-            <p>
-            Designed a health monitoring system for real-time pulse detection and alerts.  
-            Integrated sensors with microcontroller and mobile notification system.
-            </p>
-        </div>
+       <div class="card">
+  
+    <h3>Heart Pulse Monitoring System</h3>
+    <p>
+    Developed a heart pulse monitoring system for remote health tracking.  
+    Measured pulse rate using sensors and processed data through a microcontroller.  
+    Integrated mobile alerts for real-time monitoring during emergency conditions.
+    </p>
+</div>
 
     </div>
 </section>
@@ -177,14 +163,15 @@ footer {
 <section class="section">
     <h2>Contact</h2>
     <ul>
-        <li>Email: anamikapv087@gmail.com</li>
-        <li>Phone: +91 7012227047</li>
+        <li>Email: anulakshmic158@gmail.com</li>
+        <li>Phone: +91 8714240804</li>
         <li>Location: Kerala, India</li>
+        <li>LinkedIn: linkedin.com/in/anulakshmic</li>
     </ul>
 </section>
 
 <footer>
-    <p>© 2026 Anamika P V | Portfolio</p>
+    <p>© 2026 Anulakshmi C | Portfolio</p>
 </footer>
 
 </body>
