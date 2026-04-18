@@ -56,11 +56,22 @@ h2 {
     background: #233554;
 }
 
-/* IMAGE */
-.card img {
+/* IMAGE GRID (NEW) */
+.project-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.project-images img {
     width: 100%;
     border-radius: 8px;
-    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.project-images img:hover {
+    transform: scale(1.05);
 }
 
 /* LIST */
@@ -97,7 +108,7 @@ footer {
 
     I have hands-on experience in designing and fabricating custom PCBs, developing embedded firmware, and building real-world systems including digital measurement devices and converter circuits.  
 
-    I also use MATLAB and Simulink for system modeling and performance analysis. I am passionate about developing reliable embedded solutions for real-world engineering problems.
+    I also use MATLAB and Simulink for system modeling and performance analysis.
     </p>
 </section>
 
@@ -117,14 +128,21 @@ footer {
     <h2>Projects</h2>
     <div class="card-container">
 
-        <!-- Converter Project -->
         <div class="card">
             <h3>Bidirectional DC-DC Converter</h3>
 
-            <img src="converter.png">
-            <img src="converter_1.png">
-            <img src="converter_2.png">
-            <img src="converter_4.png">
+            <div class="project-images">
+                <img src="PCBGREENFINAL.png">
+                <img src="PCBGREENSTM.png">
+                <img src="PCBstm.png">
+                <img src="pcb-stmlow.png">
+                <img src="pcbfinal.png">
+                <img src="schem-current.png">
+                <img src="schem-volt.png">
+                <img src="schem-stm1.png">
+                <img src="schem-stm2.png">
+                <img src="schem-stm3.png">
+            </div>
 
             <p>
             Designed a high-efficiency SEPIC-Zeta converter using STM32 for renewable energy applications.  
@@ -132,19 +150,15 @@ footer {
             </p>
         </div>
 
-        <!-- Digital Voltmeter -->
         <div class="card">
             <h3>Digital Voltmeter</h3>
-
-            <img src="bidirectiona.png">
-
+            <img src="bidirectiona.png" style="width:100%; border-radius:8px;">
             <p>
             Developed an STM32-based voltmeter using ADC and OLED display.  
             Designed a compact PCB for accurate voltage measurement.
             </p>
         </div>
 
-        <!-- Air Quality -->
         <div class="card">
             <h3>Air Quality Monitoring System</h3>
             <p>
@@ -153,7 +167,6 @@ footer {
             </p>
         </div>
 
-        <!-- IoT -->
         <div class="card">
             <h3>IoT Railway Crack Detection</h3>
             <p>
@@ -162,7 +175,6 @@ footer {
             </p>
         </div>
 
-        <!-- Heart -->
         <div class="card">
             <h3>Heart Pulse Monitoring System</h3>
             <p>
