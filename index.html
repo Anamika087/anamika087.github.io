@@ -34,6 +34,7 @@ h2 {
     padding: 50px 10%;
 }
 
+/* ===== SKILLS GRID ===== */
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -52,24 +53,41 @@ h2 {
     background: #233554;
 }
 
+/* ===== PROJECT GRID (FIXED) ===== */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background: #112240;
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    background: #233554;
+}
+
 /* IMAGE GRID */
 .project-images {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    margin-bottom: 10px;
+    margin: 15px 0;
 }
 
 .project-images img {
     width: 100%;
+    height: 120px;
+    object-fit: cover;
     border-radius: 8px;
-    transition: 0.3s;
 }
 
-.project-images img:hover {
-    transform: scale(1.05);
-}
-
+/* LIST */
 ul {
     list-style: none;
     padding: 0;
@@ -118,9 +136,11 @@ footer {
 
 <section class="section">
     <h2>Projects</h2>
-    <div class="card-container">
 
-        <div class="card">
+    <div class="projects-grid">
+
+        <!-- DC-DC Converter -->
+        <div class="project-card">
             <h3>DC-DC Converter</h3>
 
             <div class="project-images">
@@ -134,34 +154,40 @@ footer {
 
             <p>
             Designed a high-efficiency SEPIC-Zeta converter using STM32 for renewable energy applications.  
-            Implemented control algorithms and developed a custom PCB for power conversion.
+            Implemented control algorithms and developed a custom PCB.
             </p>
         </div>
 
-        <div class="card">
+        <!-- Digital Voltmeter -->
+        <div class="project-card">
             <h3>Digital Voltmeter</h3>
-             <div class="project-images">
+
+            <div class="project-images">
                 <img src="digi_sch.png">
                 <img src="digi_2.png">
                 <img src="digi.png">
-               
             </div>
+
             <p>
-              Developed a compact digital voltmeter using STM32, incorporating ADC-based voltage acquisition, signal conditioning, and OLED display for real-time visualization. Focused on achieving high accuracy, noise reduction, and efficient embedded system design.
-                </p>
-                 <div class="card">
-            <h3>Air Qulaity Monitoring</h3>
-             <div class="project-images">
+            Developed a compact digital voltmeter using STM32, incorporating ADC-based voltage acquisition,
+            signal conditioning, and OLED display for real-time visualization.
+            </p>
+        </div>
+
+        <!-- Air Quality Monitoring -->
+        <div class="project-card">
+            <h3>Air Quality Monitoring</h3>
+
+            <div class="project-images">
                 <img src="stm.png">
                 <img src="air.png">
-                 <img src="digi.png">
-    
-               
+                <img src="digi.png">
             </div>
-            </p>
-             Developed a real-time air quality monitoring system using STM32 and gas sensors, with ADC-based data acquisition and OLED display for visualization. Designed for continuous environmental monitoring with improved measurement reliability.
-                 </p>
 
+            <p>
+            Developed a real-time air quality monitoring system using STM32 and gas sensors,
+            with ADC-based data acquisition and OLED display.
+            </p>
         </div>
 
     </div>
