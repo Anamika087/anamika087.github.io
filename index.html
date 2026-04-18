@@ -1,7 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anamika P V | Portfolio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0a192f;
+    color: #ccd6f6;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+h1 {
+    color: #64ffda;
+    font-size: 40px;
+}
+
+h2 {
+    color: #64ffda;
+    border-bottom: 2px solid #233554;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.section {
+    padding: 50px 10%;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #112240;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: #233554;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 8px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020c1b;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Anamika P V</h1>
+    <p>VLSI & Embedded Systems Engineer</p>
+    <p>STM32 | PCB Design | Power Electronics</p>
+</header>
+
+<section class="section">
+    <h2>About</h2>
+    <p>
+    I am an M.Tech student specializing in VLSI and Embedded Systems with strong expertise in STM32-based system design, PCB development, and power electronics applications.
+
+    I have hands-on experience in designing and fabricating custom PCBs, developing embedded firmware, and building real-world systems including digital measurement devices and converter circuits.
+
+    I also use MATLAB and Simulink for system modeling and performance analysis.
+    </p>
+</section>
+
+<section class="section">
+    <h2>Skills</h2>
+    <div class="card-container">
+        <div class="card">STM32, Arduino, ESP</div>
+        <div class="card">Embedded C, Verilog</div>
+        <div class="card">PCB Design (Altium)</div>
+        <div class="card">UART, SPI, I2C</div>
+        <div class="card">MATLAB & Simulink</div>
+        <div class="card">IoT Systems</div>
+    </div>
+</section>
+
 <section class="section">
     <h2>Projects</h2>
     <div class="card-container">
 
+        <!-- Converter Project -->
         <div class="card">
             <h3>Bidirectional DC-DC Converter</h3>
 
@@ -16,23 +125,29 @@
             </p>
         </div>
 
+        <!-- Digital Voltmeter -->
         <div class="card">
             <h3>Digital Voltmeter</h3>
+
             <img src="bidirectiona.png">
+
             <p>
             Developed an STM32-based voltmeter using ADC and OLED display.  
             Designed a compact PCB for accurate voltage measurement.
             </p>
         </div>
 
+        <!-- Air Quality -->
         <div class="card">
             <h3>Air Quality Monitoring System</h3>
+
             <p>
             Built a multi-sensor system to measure environmental parameters using STM32.  
             Displayed real-time data on an OLED screen.
             </p>
         </div>
 
+        <!-- IoT Project -->
         <div class="card">
             <h3>IoT Railway Crack Detection</h3>
             <p>
@@ -41,6 +156,7 @@
             </p>
         </div>
 
+        <!-- Heart Pulse -->
         <div class="card">
             <h3>Heart Pulse Monitoring System</h3>
             <p>
@@ -51,3 +167,19 @@
 
     </div>
 </section>
+
+<section class="section">
+    <h2>Contact</h2>
+    <ul>
+        <li>Email: anamikapv087@gmail.com</li>
+        <li>Phone: +91 7012227047</li>
+        <li>Location: Kerala, India</li>
+    </ul>
+</section>
+
+<footer>
+    <p>© 2026 Anamika P V | Portfolio</p>
+</footer>
+
+</body>
+</html>
